@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator | js</title>
+	<style type="text/css">
+		body{
+			background: linear-gradient(to right , #9900eb 0%,#44d9ef 100%);
+		}
+
+		.box{
+			margin: auto;
+			background: linear-gradient(to right , #44d9ef 0%, #9900eb 100%);
+			height: 450px;
+			width: 300px;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+		}
+
+		.box .cal{
+			
+			padding: 20px;
+		}
+
+		input[name=number]{
+			width: 100%;
+			height: 50px;
+			background: rgba(255,255,255, 0.4);
+			border-radius: 5px;
+			border: none;
+			padding: 3px;
+			color: #4d4141;
+		}
+
+		.box .cal input[type=button]{
+			width: 50px;
+			height: 50px;
+			background: black;
+			color: white;
+			border-radius: 5px;	
+			padding: 5px 10px;
+			font-size: 20px;
+			border: none;
+			margin: auto 5px;
+			text-align: center;
+		}
+		.box .cal input[type=button]:hover{
+			background: #817d7d; 
+		}
+		#del{
+			width: 180px;
+		}
+	</style>
+</head>
+<body>
+			<h1 align="center">Calculator v0.1</h1>
+	<div class="box">
+		<form class="cal" method="post">
+			<input type="text" class="textview" name="number"><br><br>
+			<input type="button" class="number" name="" value="9" onclick="insert(9)">
+			<input type="button" class="number" name="" value="8" onclick="insert(8)">
+			<input type="button" class="number" name="" value="7" onclick="insert(7)">
+			<input type="button" class="submit" name="" value="x" onclick="insert('*')"><br><br>
+			<input type="button" class="number" name="" value="6" onclick="insert(6)">
+			<input type="button" class="number" name="" value="5" onclick="insert(5)">
+			<input type="button" class="number" name="" value="4" onclick="insert(4)">
+			<input type="button" class="submit" name="" value="-" onclick="insert('-')"><br><br>
+			<input type="button" class="number" name="" value="3" onclick="insert(3)">
+			<input type="button" class="number" name="" value="2" onclick="insert(2)">
+			<input type="button" class="number" name="" value="1" onclick="insert(1)">
+			<input type="button" class="submit" name="" value="+" onclick="insert('+')"><br><br>
+			<input type="button" class="submit" name="" value="C" onclick="clean()">
+			<input type="button" class="number" name="" value="0" onclick="insert(0)">
+			<input type="button" class="submit" name="" value="%" onclick="insert('%')">
+			<input type="button" class="submit" name="" value="/" onclick="insert('/')"><br><br>
+			<input type="button" class="submit" name="" value="Delete" id="del" onclick="remove()">
+			<input type="button" class="submit" name="" value="=" onclick="count()">
+		</form>
+	</div>
+
+<script type="text/javascript" src="script.js">
+
+
+</script>
+</body>
+</html>
